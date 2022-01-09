@@ -14,7 +14,7 @@ Between the two code scripts used to perform this analysis, the refactored code 
 ![VBA_Challenge_2017](https://user-images.githubusercontent.com/96350388/148700836-60920c65-1a46-48dc-90b7-2de7d6723ce0.jpg)
 ![VBA_Challenge_2018](https://user-images.githubusercontent.com/96350388/148700839-1fcf810f-663c-404e-8d3c-bf028d3e4ff1.jpg)
 ### How the Original Code Performed
-These results are both close to 4 times as fast as the original codes time, which are shown below
+The refactored code results above are both close to 4 times as fast as the original codes time, which are shown below
 ![2017_Original_Code_Time](https://user-images.githubusercontent.com/96350388/148700848-c11eba82-f7b4-441a-b2d1-af5f0276624d.jpg)
 ![2018_Original_Code_Time](https://user-images.githubusercontent.com/96350388/148700850-9a03796e-3f2e-4e3a-a421-13de4e527f7e.jpg)
 ### Differences Between Original and Refactored Code
@@ -85,3 +85,11 @@ This is compared to the use arrays functioning with a variable named tickerIndex
     
     Next i
 In the original code, we are constantly resetting variable values, establishing a new ticker, setting the values for that ticker, then going back starting over again until we run out of tickers. In the refactored code, the ticker changes appropriately as the for loop is assigning data to our variables, so we don’t need to constantly reset out variables because the variables use arrays and their value changes as the ticker changes, so no new ticker will store data over another ticker’s data. 
+
+# Summary of the Impact of Refactored Code
+### Advantages of Refactoring Code
+There are several potential advantages of refactoring code, including but not limited to: making the code easier to read and/or understand, improving the code’s efficiency, and allowing for the code to take in additional data points that may be added later.
+### Disadvantages of Refactoring Code
+Typically, refactoring code is done because it is advantageous to do, however, sometimes there might be some unintended consequences. Some of these disadvantages to refactoring code are: it may cause your code to break if done improperly, or the refactored code may be more advanced and less accessible/understandable to beginner coders or people who do not understand code.
+### How the pros and cons apply to refactoring our original VBA script
+In the case of refactoring our original VBA script, our refactored code used arrays, which is a slightly more advanced coding technique. This hit on a few of the advantages and disadvantages listed above. The use of arrays made our code run much more efficiently and made the code somewhat cleaner to read (if you know what arrays are and how they function). However, if you do not know what arrays are or how they function, the refactored code would become pretty mysterious. Additionally, while refactoring the code it took several attempts to get right, resulting in broken code a number of times. This is frustrating when you originally already had code that worked just fine, and all you were attempting to do was improve it. Ultimately, the refactored code became a better, more efficient program than the original. 
